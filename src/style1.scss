@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
+
+.ul1.accordion-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  background-color:inherit;
+  
+  .li1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    padding: 9px;
+    margin: 0 auto px auto;
+    
+   
+    border-radius: px;
+   
+    
+    &.active {
+      h3 {
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+    
+    h3 {
+      color:#000;
+      font-weight: 700;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 0 0 0 0;
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      
+      &:after {     
+  
+        font-family: "material-design-iconic-font";
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #000 !important;
+        transition: all 0.3s ease-in-out;
+        font-size: 18px;
+      }
+    }
+    
+    div.answer {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      padding: 0;
+     
+
+      .p1 {
+        color:#ffffffdc;
+        position: relative;
+        display: block;
+        font-weight: 300;
+        padding: 20px 0 0 0;
+        cursor: pointer;
+        line-height: 150%;
+        margin: 0px 0 0px 5px;
+        font-size: 14px;
+        height:40px
+
+      }
+      .p1:hover{
+        color:#ffffff7a;
+      }
+    }
+  }
+}
+
+.ul2.accordion-list {
+ 
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+
+  .li2 {
+    color: var(--space-cadet);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);;;
+    padding: 16px;
+    margin: 0 auto 17px auto;
+    border: 1px solid hsl(240deg 52.05% 95.07%);
+    border-radius: 18px;
+    cursor: pointer;
+    
+    &.active {
+      .h33 {
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+    
+    .h33 {
+      color: #000!important;
+      font-weight: 700;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 0 0 0 5px;
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      
+      &:after {
+  
+        font-family: "material-design-iconic-font";
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #000 !important;
+        transition: all 0.3s ease-in-out;
+        font-size: 18px;
+      }
+    }
+    
+    div.answer {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      
+      .p2 {
+        color: #000;
+        position: relative;
+        display: block;
+        font-weight: 300;
+        padding: 20px 10px 0px 5px;
+        cursor: pointer;
+        line-height: 200%;
+        margin: 0 0 15px 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
